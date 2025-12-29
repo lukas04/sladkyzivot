@@ -1,113 +1,133 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sladký život bez cukru</title>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background: #faf7f2;
-        color: #333;
-    }
-
-    header {
-        text-align: center;
-        padding: 70px 20px;
-        background: #ffe6a7;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2.4rem;
-        color: #4a3214;
-        font-weight: bold;
-    }
-
-    header p {
-        margin-top: 15px;
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        background: #cc8033;
-        color: white;
-        padding: 12px 22px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: auto;
-        padding: 40px 20px;
-    }
-
-    h2 {
-        color: #4a3214;
-        margin-top: 40px;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 40px 20px;
-        font-size: 0.9rem;
-        color: #777;
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sladký život bez cukru</title>
+  <meta name="description" content="Měsíční výzva bez přidaného cukru na podporu lidí s cukrovkou a inzulínovou rezistencí. #SladimeJinak" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-    <h1>Sladký život bez cukru</h1>
-    <p>Měsíční výzva na podporu lidí s cukrovkou a inzulínovou rezistencí. 
-    Vzdáváme se přidaného cukru. Společně. Bez tlaku. S respektem.</p>
-    <a href="#jak-se-pridat" class="btn">Přidávám se</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a class="brand" href="index.html" aria-label="Sladký život bez cukru">
+        <div class="brand-badge" aria-hidden="true"><span>SŽ</span></div>
+        <span>sladkyzivot</span>
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Odkazy">
+        <a href="index.html">Domů</a>
+        <a href="recepty.html">Recepty</a>
+        <a href="#jak-se-pridat" class="nav-cta">Přidat se</a>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel" aria-label="Otevřít menu">
+        ☰
+      </button>
+    </nav>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="index.html">Domů</a>
+      <a href="recepty.html">Recepty</a>
+      <a href="#jak-se-pridat" class="nav-cta">Přidat se</a>
+    </div>
+  </div>
 </header>
 
-<div class="container">
-    <h2>Proč to děláme</h2>
-    <p>Někteří lidé cukr jíst nemohou, i kdyby chtěli. Ne proto, že nechtějí, ale protože by jim ublížil. 
-    Když se k nim na chvíli přidáme, pomůžeme jim cítit se méně sami. 
-    A my sami zjistíme, jak sladký může být život i bez cukru.</p>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="pill">30 dní bez přidaného cukru • #SladimeJinak</div>
+        <h1>Sladký život bez cukru</h1>
+        <p>
+          Měsíční výzva na podporu lidí s cukrovkou a inzulínovou rezistencí.
+          Vzdáváme se přidaného cukru. Společně. Bez tlaku. S respektem.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#jak-se-pridat">Přidávám se</a>
+          <a class="btn" href="recepty.html">Mrknout na recepty</a>
+        </div>
+        <p class="small" style="margin-top:14px;">
+          Tip: sdílej svůj průběh a recepty pod hashtagem <strong>#SladimeJinak</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Pravidla výzvy</h2>
-    <p><strong>30 dní bez přidaného cukru.</strong></p>
-    <ul>
-        <li>Bez sladkostí, slazených nápojů a doslazovaných potravin</li>
-        <li>Ovoce je v pořádku</li>
-        <li>Žádné počítání kalorií, žádná dieta</li>
-        <li>Když porušíš, pokračuj. Tohle není soutěž ani trest.</li>
-    </ul>
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <h2>Proč to děláme</h2>
+          <p>
+            Někteří lidé cukr jíst nemohou, i kdyby chtěli. Ne proto, že nechtějí,
+            ale protože by jim ublížil. Když se k nim na chvíli přidáme,
+            pomůžeme jim cítit se méně sami. A my sami zjistíme,
+            jak sladký může být život i bez cukru.
+          </p>
 
-    <h2 id="jak-se-pridat">Jak se přidat</h2>
-    <p>Stačí se rozhodnout a začít. Klidně hned dnes.</p>
-    <p>Přidej se k nám a sdílej svou cestu s hashtagem:</p>
-    <p><strong>#SladimeJinak</strong></p>
+          <h2 style="margin-top:16px;">Pravidla výzvy</h2>
+          <p><strong>30 dní bez přidaného cukru.</strong></p>
+          <ul class="list">
+            <li>Bez sladkostí, slazených nápojů a doslazovaných potravin</li>
+            <li>Ovoce je v pořádku</li>
+            <li>Žádné počítání kalorií, žádná dieta</li>
+            <li>Když porušíš, pokračuj. Tohle není soutěž ani trest.</li>
+          </ul>
+        </div>
 
-    <h2>Sdílecí věta</h2>
-    <p><em>„Přidávám se k výzvě Sladký život bez cukru. Ne proto, že musím. Ale proto, že někteří nemohou.“</em></p>
+        <aside class="card" id="jak-se-pridat">
+          <h2>Jak se přidat</h2>
+          <p>Stačí se rozhodnout a začít. Klidně hned dnes.</p>
 
-    <h2>Časté otázky</h2>
-    <p><strong>Smím ovoce?</strong> Ano.</p>
-    <p><strong>Co když to poruším?</strong> Pokračuješ dál. Důležitá je cesta, ne dokonalost.</p>
-</div>
+          <p class="small" style="margin-top:10px;">Sdílej svou cestu s hashtagem:</p>
+          <p style="margin:0;"><strong>#SladimeJinak</strong></p>
 
-<footer>
+          <h2 style="margin-top:16px;">Sdílecí věta</h2>
+          <p><em>„Přidávám se k výzvě Sladký život bez cukru. Ne proto, že musím. Ale proto, že někteří nemohou.“</em></p>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="recepty.html">Přidat recept</a>
+            <a class="btn" href="#faq">FAQ</a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="card" id="faq" style="margin-top:16px;">
+        <h2>Časté otázky</h2>
+        <p><strong>Smím ovoce?</strong> Ano.</p>
+        <p><strong>Co když to poruším?</strong> Pokračuješ dál. Důležitá je cesta, ne dokonalost.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
     &copy; Sladký život bez cukru • #SladimeJinak
+  </div>
 </footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const panel = document.getElementById('mobilePanel');
+
+  btn.addEventListener('click', () => {
+    const open = panel.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // zavřít menu po kliknutí na odkaz (na mobilu)
+  panel.addEventListener('click', (e) => {
+    if (e.target.tagName.toLowerCase() === 'a') {
+      panel.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
 
 </body>
 </html>

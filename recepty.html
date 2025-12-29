@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recepty • Sladký život bez cukru</title>
+  <meta name="description" content="Recepty na dezerty bez přidaného cukru. #SladimeJinak" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a class="brand" href="index.html" aria-label="Sladký život bez cukru">
+        <div class="brand-badge" aria-hidden="true"><span>SŽ</span></div>
+        <span>sladkyzivot</span>
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Odkazy">
+        <a href="index.html">Domů</a>
+        <a href="recepty.html">Recepty</a>
+        <a href="index.html#jak-se-pridat" class="nav-cta">Přidat se</a>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel" aria-label="Otevřít menu">
+        ☰
+      </button>
+    </nav>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="index.html">Domů</a>
+      <a href="recepty.html">Recepty</a>
+      <a href="index.html#jak-se-pridat" class="nav-cta">Přidat se</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 12px;">
+    <div class="container">
+      <div class="hero-card">
+        <div class="pill">Recepty bez přidaného cukru</div>
+        <h1>Recepty</h1>
+        <p>
+          Tady budou dezerty a tipy na „sladké“ chvíle bez cukru.
+          Zatím jsou tu ukázkové karty – pak je můžeš postupně plnit.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#pridat">Chci přidat recept</a>
+          <a class="btn" href="index.html">Zpět na úvod</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="cards">
+        <article class="card recipe">
+          <h2>Jogurtový pohár s ovocem</h2>
+          <p class="small">Rychlovka na večer • bez přidaného cukru</p>
+          <div class="meta">
+            <span class="tag">10 min</span>
+            <span class="tag">bez pečení</span>
+            <span class="tag">pro začátek</span>
+          </div>
+          <p>
+            Řecký jogurt, ovoce, ořechy/semena, skořice. Hotovo.
+          </p>
+        </article>
+
+        <article class="card recipe">
+          <h2>Banánové lívance (bez cukru)</h2>
+          <p class="small">Jen 3 ingredience</p>
+          <div class="meta">
+            <span class="tag">15 min</span>
+            <span class="tag">pánev</span>
+            <span class="tag">oblíbené</span>
+          </div>
+          <p>
+            Banán + vejce + ovesné vločky. Dosladí ovoce, ne cukr.
+          </p>
+        </article>
+
+        <article class="card recipe">
+          <h2>Kakao „na pohodu“</h2>
+          <p class="small">Tip na večerní rituál</p>
+          <div class="meta">
+            <span class="tag">5 min</span>
+            <span class="tag">nápoj</span>
+            <span class="tag">retro vibe</span>
+          </div>
+          <p>
+            Neslazené kakao, mléko/alternativa, špetka skořice.
+          </p>
+        </article>
+      </div>
+
+      <div class="card" id="pridat" style="margin-top:16px;">
+        <h2>Jak přidat recept (zatím jednoduše)</h2>
+        <p>
+          Než to budeme automatizovat, můžeš recepty přidávat ručně:
+          zkopíruješ jednu „kartu“ výše a upravíš text.
+        </p>
+        <p class="small">
+          Až budeš chtít, můžeme udělat formulář (Google Form / Airtable) nebo jednoduchý „repozitář receptů“ na GitHubu.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    &copy; Sladký život bez cukru • #SladimeJinak
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const panel = document.getElementById('mobilePanel');
+
+  btn.addEventListener('click', () => {
+    const open = panel.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  panel.addEventListener('click', (e) => {
+    if (e.target.tagName.toLowerCase() === 'a') {
+      panel.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+</body>
+</html>
