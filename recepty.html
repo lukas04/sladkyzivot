@@ -1,140 +1,98 @@
 <!DOCTYPE html>
+
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recepty • Sladký život bez cukru</title>
-  <meta name="description" content="Recepty na dezerty bez přidaného cukru. #SladimeJinak" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Recepty • Sladký život bez cukru</title>
+<meta content="Dezerty bez přidaného cukru: jednoduché recepty, které doslazuje ovoce nebo malé množství javorového sirupu." name="description"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="site-header">
-  <div class="container">
-    <nav class="nav" aria-label="Hlavní navigace">
-      <a class="brand" href="index.html" aria-label="Sladký život bez cukru">
-        <div class="brand-badge" aria-hidden="true"><span>SŽ</span></div>
-        <span>sladkyzivot</span>
-      </a>
-
-      <div class="nav-links" role="navigation" aria-label="Odkazy">
-        <a href="index.html">Domů</a>
-        <a href="recepty.html">Recepty</a>
-        <a href="index.html#jak-se-pridat" class="nav-cta">Přidat se</a>
-      </div>
-
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel" aria-label="Otevřít menu">
-        ☰
-      </button>
-    </nav>
-
-    <div class="mobile-panel" id="mobilePanel">
-      <a href="index.html">Domů</a>
-      <a href="recepty.html">Recepty</a>
-      <a href="index.html#jak-se-pridat" class="nav-cta">Přidat se</a>
-    </div>
-  </div>
+<div class="container nav">
+<a class="brand" href="index.html">
+<span class="brand-badge">SŽ</span>
+<span>sladkyživot</span>
+</a>
+<nav aria-label="Hlavní navigace" class="nav-links">
+<a href="index.html">Domů</a>
+<a aria-current="page" href="recepty.html">Recepty</a>
+</nav>
+</div>
 </header>
-
 <main>
-  <section class="hero" style="padding-bottom: 12px;">
-    <div class="container">
-      <div class="hero-card">
-        <div class="pill">Recepty bez přidaného cukru</div>
-        <h1>Recepty</h1>
-        <p>
-          Tady budou dezerty a tipy na „sladké“ chvíle bez cukru.
-          Zatím jsou tu ukázkové karty – pak je můžeš postupně plnit.
+<section class="hero">
+<div class="container">
+<div class="hero-card">
+<h1>Recepty</h1>
+<p>
+          Zde najdeš dezerty a tipy na „sladké“ chvíle bez přidaného cukru.
+          Doslazujeme ovocem a jen malým množstvím javorového sirupu.
         </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#pridat">Chci přidat recept</a>
-          <a class="btn" href="index.html">Zpět na úvod</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-
-      <div class="cards">
-        <article class="card recipe">
-          <h2>Jogurtový pohár s ovocem</h2>
-          <p class="small">Rychlovka na večer • bez přidaného cukru</p>
-          <div class="meta">
-            <span class="tag">10 min</span>
-            <span class="tag">bez pečení</span>
-            <span class="tag">pro začátek</span>
-          </div>
-          <p>
-            Řecký jogurt, ovoce, ořechy/semena, skořice. Hotovo.
+</div>
+</div>
+</section>
+<section class="container">
+<div class="grid cols-2">
+<article class="card">
+<img alt="Malinovo-jogurtový pohárek s ovocem" loading="lazy" src="assets/img/recepty/malinovo-jogurtove-poharky.png"/>
+<div class="card-body">
+<h2>Malinovo‑jogurtové pohárky s kakaem</h2>
+<div class="meta">
+<span>🕒 15 min</span>
+<span>🍓 bez pečení</span>
+<span>🥣 2 porce</span>
+</div>
+<div class="badges">
+<span class="badge">maliny</span>
+<span class="badge">jogurt</span>
+<span class="badge">oves</span>
+<span class="badge">javorový sirup</span>
+</div>
+<p style="margin-top:12px;">
+            Vrstvy řeckého jogurtu, malin, vloček a kakaa. Jemné, syté a hotové za chvilku.
           </p>
-        </article>
-
-        <article class="card recipe">
-          <h2>Banánové lívance (bez cukru)</h2>
-          <p class="small">Jen 3 ingredience</p>
-          <div class="meta">
-            <span class="tag">15 min</span>
-            <span class="tag">pánev</span>
-            <span class="tag">oblíbené</span>
-          </div>
-          <p>
-            Banán + vejce + ovesné vločky. Dosladí ovoce, ne cukr.
+<p style="margin-top:14px;">
+<a class="btn" href="recepty/malinovo-jogurtove-poharky.html">Zobrazit recept</a>
+</p>
+</div>
+</article>
+<article class="card">
+<img alt="Banánové lívance s ovocem a javorovým sirupem" loading="lazy" src="assets/img/recepty/bananove-livance.png"/>
+<div class="card-body">
+<h2>Banánové lívance (bez cukru)</h2>
+<div class="meta">
+<span>🕒 20 min</span>
+<span>🍳 pánev</span>
+<span>🥞 2 porce</span>
+</div>
+<div class="badges">
+<span class="badge">banán</span>
+<span class="badge">vejce</span>
+<span class="badge">ovesné vločky</span>
+</div>
+<p style="margin-top:12px;">
+            Banán + vejce + oves. Nic víc. Skvělé i s jogurtem a hrstí borůvek.
           </p>
-        </article>
-
-        <article class="card recipe">
-          <h2>Kakao „na pohodu“</h2>
-          <p class="small">Tip na večerní rituál</p>
-          <div class="meta">
-            <span class="tag">5 min</span>
-            <span class="tag">nápoj</span>
-            <span class="tag">retro vibe</span>
-          </div>
-          <p>
-            Neslazené kakao, mléko/alternativa, špetka skořice.
-          </p>
-        </article>
-      </div>
-
-      <div class="card" id="pridat" style="margin-top:16px;">
-        <h2>Jak přidat recept (zatím jednoduše)</h2>
-        <p>
-          Než to budeme automatizovat, můžeš recepty přidávat ručně:
-          zkopíruješ jednu „kartu“ výše a upravíš text.
-        </p>
-        <p class="small">
-          Až budeš chtít, můžeme udělat formulář (Google Form / Airtable) nebo jednoduchý „repozitář receptů“ na GitHubu.
-        </p>
-      </div>
-
-    </div>
-  </section>
+<p style="margin-top:14px;">
+<a class="btn" href="recepty/bananove-livance.html">Zobrazit recept</a>
+</p>
+</div>
+</article>
+</div>
+<div class="section">
+<!--
+<p class="note">
+        Tip: Recepty zatím přidáváš ručně – stačí zkopírovat jednu existující stránku receptu,
+        přepsat text a změnit obrázek.
+</p>
+-->
+</div>
+</section>
 </main>
-
-<footer class="footer">
-  <div class="container">
-    &copy; Sladký život bez cukru • #SladimeJinak
-  </div>
+<footer>
+  © Sladký život bez cukru • #SladimeJinak
 </footer>
-
-<script>
-  const btn = document.getElementById('menuBtn');
-  const panel = document.getElementById('mobilePanel');
-
-  btn.addEventListener('click', () => {
-    const open = panel.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-
-  panel.addEventListener('click', (e) => {
-    if (e.target.tagName.toLowerCase() === 'a') {
-      panel.classList.remove('open');
-      btn.setAttribute('aria-expanded', 'false');
-    }
-  });
-</script>
-
 </body>
 </html>
